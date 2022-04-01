@@ -1,0 +1,5 @@
+create database schoolmgmt;
+create table student ( id int NOT NULL AUTO_INCREMENT, dept varchar(20), name varchar(30), nid int(10), birth varchar(20), address varchar(30), address int, PRIMARY KEY (id)  );
+create table teacher ( id int NOT NULL AUTO_INCREMENT, dept varchar(20), name varchar(30), nid int(10), birth varchar(20), address varchar(30), PRIMARY KEY (id) );
+create table course ( id int NOT NULL AUTO_INCREMENT, dept varchar(20), title varchar(50), credit int(10), syllabus varchar(200),teacher_id int, PRIMARY KEY (id) );
+create table payment ( payment_id int NOT NULL AUTO_INCREMENT, student_id int(9), amount double, date int(10) );
